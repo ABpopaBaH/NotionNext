@@ -27,6 +27,11 @@ export async function getStaticProps({ params: { category }, locale }) {
   )
   // 处理文章页数
   props.postCount = props.posts.length
+  if (props.postCount === 0) {
+    return {
+      notFound: true
+    }
+  }
   // 处理分页
   if (siteConfig('POST_LIST_STYLE') === 'scroll') {
     // 滚动列表 给前端返回所有数据
