@@ -63,6 +63,8 @@ class MyDocument extends Document {
 
           {/* 预先设置深色模式，避免闪烁 */}
           <script dangerouslySetInnerHTML={{ __html: darkModeScript }} />
+       <meta name="msvalidate.01" content="3E8BFC4A364399319DC349B0E515A39A" />
+
         </Head>
 
         <body>
